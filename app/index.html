@@ -1,18 +1,445 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="shortcut icon" href="/images/favicon/......" type="image/x-icon">
+    <title>InterStudent</title>
+    <link rel="shortcut icon" href="images/header/favicon/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <header class="header__inner">
+                <img class="header__inner-logo" src="images/header/logo.png" alt="Logo">
+                <div class="header__inner-wrapper">
+                    <div class="header__inner-menu">
+                        <span class="lnr lnr-menu header__inner-burger"></span>
+                        <ul class="header__inner-list">
+                            <li class="header__inner-link">
+                                <a href="#">
+                                    Программа
+                                </a>
+                            </li>
+                            <li class="header__inner-link">
+                                <a href="#">
+                                    Спикеры
+                                </a>
+                            </li>
+                            <li class="header__inner-link">
+                                <a href="#">
+                                    Отзывы
+                                </a>
+                            </li>
+                            <li class="header__inner-link">
+                                <a href="#">
+                                    Стоимость
+                                </a>
+                            </li>
+                            <li class="header__inner-link">
+                                <a href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="header__inner-btn btn">Записаться</button>
+                    <a class="header__inner-tel" href="tel:8 776 111 57 11">8 776 111 57 11</a>
+                    <div class="header__inner-adaptive">
+                        <a class="header__inner-tel--adaptive" href="tel:8 776 111 57 11">8 776 111 57 11</a>
+                        <button class="header__inner-btn--adaptive btn">Записаться</button>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </header>
+    <main class="main">
+        <section class="timetable">
+            <div class="container">
+                <div class="timetable__wrapper">
+                    <h1 class="timetable__title title">
+                        Закрытые презентации «Поговорим про специальности»
+                    </h1>
+                    <p class="timetable__text">
+                        Получите подробную информацию по специальностям от экспертов зарубежного образования.
+                    </p>
+                    <p class="timetable__data">
+                        <span class="timetable__calendar">13 марта</span> <span class="timetable__time">12:00
+                            – 16:00</span>
+                    </p>
+                    <button class="timetable__btn btn">Принять участие </button>
+                </div>
+            </div>
+        </section>
+        <section class="registration">
+            <div class="container">
+                <div class="registration__inner">
+                    <span class="registration__inner-title title">Регистрируйтесь, если вы:</span>
+                    <div class="registration__inner-wrapper">
+                        <div class="registration__inner-block block">
+                            <span class="registration__inner-icon registration__inner-icon--inst"></span>
+                            <span class="registration__inner-text">
+                                Хотите подобрать для себя зарубежное учебное заведение
+                            </span>
+                        </div>
+                        <div class="registration__inner-block block">
+                            <span class="registration__inner-icon registration__inner-icon--message"></span>
+                            <span class="registration__inner-text">
+                                Хотите определиться со своей специальностью
+                            </span>
+                        </div>
+                        <div class="registration__inner-block block">
+                            <span class="registration__inner-icon registration__inner-icon--cap"></span>
+                            <span class="registration__inner-text">
+                                Хотите правильно оформить документы для поступления
+                            </span>
+                        </div>
+                    </div>
+                    <span class="registration__inner-title title">Программа презентаций</span>
+                </div>
+            </div>
+            <table class="registration__inner-table table">
+                <tr class="table__tr">
+                    <th class="table__th">Название презентации</th>
+                    <th class="table__th">Время презентации</th>
+                    <th class="table__th">Выберите несколько презентаций</th>
+                </tr>
+                <tr class="table__bg">
+                    <th>Название презентации</th>
+                    <th>
+                        <span class="table__span">17:00</span><span class="table__span">17:20</span>
+                    </th>
+                    <th>
+                        <form action="#" class="table__form" id="form">
+                            <div class="table__checkbox">
+                                <input class="input" checked type="checkbox" id="checkbox-1">
+                                <label for="checkbox-1"></label>
+                            </div>
+                        </form>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Название презентации</th>
+                    <th>
+                        <span class="table__span">17:00</span><span class="table__span">17:20</span>
+                    </th>
+                    <th>
+                        <form action="#" class="table__form" id="form">
+                            <div class="table__checkbox">
+                                <input class="input" type="checkbox" id="checkbox-2">
+                                <label for="checkbox-2"></label>
+                            </div>
+                        </form>
+                    </th>
+                </tr>
+                <tr class="table__bg">
+                    <th>Название презентации</th>
+                    <th>
+                        <span class="table__span">17:00</span><span class="table__span">17:20</span>
+                    </th>
+                    <th>
+                        <form action="#" class="table__form" id="form">
+                            <div class="table__checkbox">
+                                <input class="input" type="checkbox" id="checkbox-3">
+                                <label for="checkbox-3"></label>
+                            </div>
+                        </form>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Название презентации</th>
+                    <th>
+                        <span class="table__span">17:00</span><span class="table__span">17:20</span>
+                    </th>
+                    <th>
+                        <form action="#" class="table__form" id="form">
+                            <div class="table__checkbox">
+                                <input class="input" type="checkbox" id="checkbox-4-5">
+                                <label for="checkbox-4-5"></label>
+                            </div>
+                        </form>
+                    </th>
+                </tr>
+                <tr class="table__bg">
+                    <th>Название презентации</th>
+                    <th>
+                        <span class="table__span">17:00</span><span class="table__span">17:20</span>
+                    </th>
+                    <th>
+                        <form action="#" class="table__form" id="form">
+                            <div class="table__checkbox">
+                                <input class="input" type="checkbox" id="checkbox-5">
+                                <label for="checkbox-5"></label>
+                            </div>
+                        </form>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Название презентации</th>
+                    <th>
+                        <span class="table__span">17:00</span><span class="table__span">17:20</span>
+                    </th>
+                    <th>
+                        <form action="#" class="table__form" id="form">
+                            <div class="table__checkbox">
+                                <input class="input" type="checkbox" id="checkbox-6">
+                                <label for="checkbox-6"></label>
+                            </div>
+                        </form>
+                    </th>
+                </tr>
+            </table>
+            <button class="registration__inner-btn btn" form="form">Принять участие</button>
+        </section>
+        <section class="after">
+            <div class="container">
+                <span class="after__title title">После презентаций вы узнаете:</span>
+                <ul class="after__list">
+                    <li class="after__enumeration">Подробнее про учебные заведения</li>
+                    <li class="after__enumeration">Возможные направления и специальности</li>
+                    <li class="after__enumeration">Процесс поступления и вступительные требования</li>
+                </ul>
+            </div>
+        </section>
+        <section class="speakers">
+            <div class="container">
+                <span class="speakers__title title">
+                    Спикеры
+                </span>
+                <div class="swiper-container swiper-1">
+                    <div class="swiper-wrapper speakers__swiper-container">
+                        <div class="swiper-slide speakers__swiper-slide">
+                            <div class="speakers__wrapper">
+                                <img class="speakers__img" src="images/main/speaker.jpg" alt="speaker">
+                                <div class="speakers__block block">
+                                    <span class="speakers__name">Галина Арнаутова</span>
+                                    <span class="speakers__info">Представитель колледжа Fanshawe, Канада</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide speakers__swiper-slide">
+                            <div class="speakers__wrapper">
+                                <img class="speakers__img" src="images/main/speaker.jpg" alt="speaker">
+                                <div class="speakers__block block">
+                                    <span class="speakers__name">Надежда Голенищева </span>
+                                    <span class="speakers__info">Представитель университета Warwick,
+                                        Великобритания</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide speakers__swiper-slide">
+                            <div class="speakers__wrapper">
+                                <img class="speakers__img" src="images/main/speaker.jpg" alt="speaker">
+                                <div class="speakers__block block">
+                                    <span class="speakers__name">Галина Арнаутова</span>
+                                    <span class="speakers__info">Представитель колледжа Fanshawe, Канада</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide speakers__swiper-slide">
+                            <div class="speakers__wrapper">
+                                <img class="speakers__img" src="images/main/speaker.jpg" alt="speaker">
+                                <div class="speakers__block block">
+                                    <span class="speakers__name">Надежда Голенищева </span>
+                                    <span class="speakers__info">Представитель университета Warwick,
+                                        Великобритания</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="confidence">
+            <div class="container">
+                <div class="confidence__title title">Почему нам доверяют поступление в учебные заведения</div>
+                <div class="confidence__wrapper">
+                    <div class="confidence__box">
+                        <span class="confidence__number">3 000</span>
+                        <span class="confidence__text">благодарных клиентов </span>
+                    </div>
+                    <div class="confidence__box">
+                        <span class="confidence__number">200+</span>
+                        <span class="confidence__text">учебных заведений по всему миру</span>
+                    </div>
+                    <div class="confidence__box">
+                        <span class="confidence__number">9 лет </span>
+                        <span class="confidence__text">мы помогаем выбирать свое направление </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <span class="reviews__title title">Отзывы</span>
+                <div class="swiper-container swiper-2">
+                    <div class="swiper-wrapper reviews__swiper-container">
+                        <div class="swiper-slide">
+                            <div class="reviews__wrapper">
+                                <div class="reviews__block block">
+                                    <img class="reviews__img" src="images/main/reviews.png" alt="student">
+                                    <p class="reviews__text">Это текст о компании. Он необходим для дальнейшего
+                                        продвижения Вашего сайта. Вам будет необходимо предоставить исходные данные, по
+                                        которым наши копирайтеры составят </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__wrapper">
+                                <div class="reviews__block block">
+                                    <img class="reviews__img" src="images/main/reviews.png" alt="student">
+                                    <p class="reviews__text">Это текст о компании. Он необходим для дальнейшего
+                                        продвижения Вашего сайта. Вам будет необходимо предоставить исходные данные, по
+                                        которым наши копирайтеры составят </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__wrapper">
+                                <div class="reviews__block block">
+                                    <img class="reviews__img" src="images/main/reviews.png" alt="student">
+                                    <p class="reviews__text">Это текст о компании. Он необходим для дальнейшего
+                                        продвижения Вашего сайта. Вам будет необходимо предоставить исходные данные, по
+                                        которым наши копирайтеры составят </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__wrapper">
+                                <div class="reviews__block block">
+                                    <img class="reviews__img" src="images/main/reviews.png" alt="student">
+                                    <p class="reviews__text">Это текст о компании. Он необходим для дальнейшего
+                                        продвижения Вашего сайта. Вам будет необходимо предоставить исходные данные, по
+                                        которым наши копирайтеры составят </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="reviews__wrapper">
+                                <div class="reviews__block block">
+                                    <img class="reviews__img" src="images/main/reviews.png" alt="student">
+                                    <p class="reviews__text">Это текст о компании. Он необходим для дальнейшего
+                                        продвижения Вашего сайта. Вам будет необходимо предоставить исходные данные, по
+                                        которым наши копирайтеры составят </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="check-list">
+            <div class="container">
+                <div class="check-list__inner">
+                    <p class="check-list__text">Регистрируйтесь на закрытые презентации и получите чек-лист для
+                        поступления в зарубежный университет</p>
+                    <img class="check-list__img" src="images/main/check-list.png" alt="check-list">
+                </div>
+            </div>
+        </section>
+        <section class="price">
+            <div class="container">
+                <div class="price__inner">
+                    <img class="price__img" src="images/main/price.png" alt="price">
+                    <div class="price__wapper">
+                        <span class="price__info">
+                            Стоимость участия: <span class="price__number">1000тг</span>
+                            <span class="price__span">Осталось 17 мест</span>
+                        </span>
+                        <div class="price__box">
+                            <button class="price__btn btn price__btn-arrow">Развернуть</button>
+                            <button class="price__btn btn price__btn-red">Принять участие</button>
+                            <div class="price__drop">
+                                <ul class="price__drop-list">
+                                    <span class="price__drop-title">В стоимость входит:</span>
+                                    <li class="price__enumeration">
+                                        Чек лист для поступления в учебное заведение
+                                    </li>
+                                    <li class="price__enumeration">
+                                        Встреча с учебными заведениями
+                                    </li>
+                                    <li class="price__enumeration">
+                                        Определение уровня по английскому языку
+                                    </li>
+                                    <li class="price__enumeration">
+                                        Тестирование с психологом (профориентация)
+                                    </li>
+                                    <li class="price__enumeration">
+                                        Консультация по обучению за рубежом
+                                    </li>
+                                    <li class="price__enumeration">
+                                        Диагностика вашей готовности к поступлению
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="price__disclaimer">Важно знать! Обучение проходит на платной основе. Полные гранты не
+                    предлагаются</span>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__block footer__block-black">
+                <div class="footer__block-wrapper">
+                    <span class="footer__title title">Связаться с нами</span>
+                    <div class="footer__phone">
+                        <span class="footer__name">Номер телефона:</span>
+                        <a class="footer__tel" href="tel:+7 776 111 5711">+7 776 111 5711</a>
+                        <a class="footer__tel" href="tel:+7 7172 313145">+7 7172 313145</a>
+                    </div>
+                    <div class="footer__adress">
+                        <span class="footer__name">Наш адрес:</span>
+                        <span class="footer__text">
+                            Нур-Султан, ул. Мәңгілік ел, 29/1, ЖК «Асыл Парк»
+                        </span>
+                    </div>
+                    <div class="footer__email">
+                        <span class="footer__name">Наша почта:</span>
+                        <a class="footer__mail" href="mailto:info@interstudent.kz">
+                            info@interstudent.kz
+                        </a>
+                    </div>
+                    <div class="footer__message">
+                        <span class="footer__name">Мы в соц сетях:</span>
+                        <ul class="footer__list">
+                            <li class="footer__link"><a class="footer__link-insta" href="#"></a></li>
+                            <li class="footer__link"><a class="footer__link-ws" href="#"></a></li>
+                            <li class="footer__link"><a class="footer__link-face" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__block footer__block-yellow">
+                <div class="footer__block-wrapper--yellow">
+                    <span class="footer__title title footer__title-form">Нужна помощь?</span>
+                    <form action="#">
+                        <input class="footer__input" type="text" placeholder="Ваше имя">
+                        <input class="footer__input" type="tel" placeholder="Номер телефона">
+                        <input class="footer__input" type="email" placeholder="Ваша почта">
+                        <button class="footer__btn btn" type="submit">Отправить </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
+
 </html>
